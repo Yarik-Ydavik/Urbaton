@@ -1,0 +1,487 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		D76BFA122B0A4CF600C5116F /* UrbatonApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D76BFA112B0A4CF600C5116F /* UrbatonApp.swift */; };
+		D76BFA142B0A4CF600C5116F /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D76BFA132B0A4CF600C5116F /* ContentView.swift */; };
+		D76BFA162B0A4CF700C5116F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D76BFA152B0A4CF700C5116F /* Assets.xcassets */; };
+		D76BFA192B0A4CF700C5116F /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D76BFA182B0A4CF700C5116F /* Preview Assets.xcassets */; };
+		D76BFA232B0A503100C5116F /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = D76BFA222B0A503100C5116F /* User.swift */; };
+		D76BFA252B0A511200C5116F /* Token.swift in Sources */ = {isa = PBXBuildFile; fileRef = D76BFA242B0A511200C5116F /* Token.swift */; };
+		D76BFA272B0A51E700C5116F /* ErrorResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = D76BFA262B0A51E700C5116F /* ErrorResponse.swift */; };
+		D76BFA2A2B0A52D600C5116F /* Errors.swift in Sources */ = {isa = PBXBuildFile; fileRef = D76BFA292B0A52D600C5116F /* Errors.swift */; };
+		D76BFA2C2B0A543700C5116F /* AuthBody.swift in Sources */ = {isa = PBXBuildFile; fileRef = D76BFA2B2B0A543700C5116F /* AuthBody.swift */; };
+		D76BFA2F2B0A54B500C5116F /* Developer.swift in Sources */ = {isa = PBXBuildFile; fileRef = D76BFA2E2B0A54B500C5116F /* Developer.swift */; };
+		D76BFA312B0A557D00C5116F /* UserDefaultsWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = D76BFA302B0A557D00C5116F /* UserDefaultsWorker.swift */; };
+		D76BFA342B0A565300C5116F /* Endpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = D76BFA332B0A565300C5116F /* Endpoint.swift */; };
+		D76BFA362B0A5C4C00C5116F /* Result.swift in Sources */ = {isa = PBXBuildFile; fileRef = D76BFA352B0A5C4C00C5116F /* Result.swift */; };
+		D76BFA382B0A5D3200C5116F /* AuthorizationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = D76BFA372B0A5D3200C5116F /* AuthorizationService.swift */; };
+		D76BFA3A2B0A5E2900C5116F /* LoadingState.swift in Sources */ = {isa = PBXBuildFile; fileRef = D76BFA392B0A5E2900C5116F /* LoadingState.swift */; };
+		D76BFA3C2B0A64C100C5116F /* MainViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D76BFA3B2B0A64C100C5116F /* MainViewModel.swift */; };
+		D76BFA3E2B0A64FB00C5116F /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D76BFA3D2B0A64FB00C5116F /* Extensions.swift */; };
+		D76BFA432B0A666D00C5116F /* IdentifiableAlert.swift in Sources */ = {isa = PBXBuildFile; fileRef = D76BFA422B0A666D00C5116F /* IdentifiableAlert.swift */; };
+		D76BFA462B0A675D00C5116F /* LoginScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = D76BFA452B0A675D00C5116F /* LoginScreen.swift */; };
+		D76BFA482B0A679300C5116F /* RegisterScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = D76BFA472B0A679300C5116F /* RegisterScreen.swift */; };
+		D7E9CB052B0BBD74000397F1 /* Home.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7E9CB042B0BBD74000397F1 /* Home.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		D76BFA0E2B0A4CF600C5116F /* Urbaton.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Urbaton.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D76BFA112B0A4CF600C5116F /* UrbatonApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UrbatonApp.swift; sourceTree = "<group>"; };
+		D76BFA132B0A4CF600C5116F /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ContentView.swift; path = ../ContentView.swift; sourceTree = "<group>"; };
+		D76BFA152B0A4CF700C5116F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		D76BFA182B0A4CF700C5116F /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		D76BFA222B0A503100C5116F /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		D76BFA242B0A511200C5116F /* Token.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Token.swift; sourceTree = "<group>"; };
+		D76BFA262B0A51E700C5116F /* ErrorResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorResponse.swift; sourceTree = "<group>"; };
+		D76BFA292B0A52D600C5116F /* Errors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Errors.swift; sourceTree = "<group>"; };
+		D76BFA2B2B0A543700C5116F /* AuthBody.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthBody.swift; sourceTree = "<group>"; };
+		D76BFA2E2B0A54B500C5116F /* Developer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Developer.swift; sourceTree = "<group>"; };
+		D76BFA302B0A557D00C5116F /* UserDefaultsWorker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaultsWorker.swift; sourceTree = "<group>"; };
+		D76BFA332B0A565300C5116F /* Endpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Endpoint.swift; sourceTree = "<group>"; };
+		D76BFA352B0A5C4C00C5116F /* Result.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Result.swift; sourceTree = "<group>"; };
+		D76BFA372B0A5D3200C5116F /* AuthorizationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthorizationService.swift; sourceTree = "<group>"; };
+		D76BFA392B0A5E2900C5116F /* LoadingState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingState.swift; sourceTree = "<group>"; };
+		D76BFA3B2B0A64C100C5116F /* MainViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewModel.swift; sourceTree = "<group>"; };
+		D76BFA3D2B0A64FB00C5116F /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		D76BFA422B0A666D00C5116F /* IdentifiableAlert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IdentifiableAlert.swift; sourceTree = "<group>"; };
+		D76BFA452B0A675D00C5116F /* LoginScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginScreen.swift; sourceTree = "<group>"; };
+		D76BFA472B0A679300C5116F /* RegisterScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterScreen.swift; sourceTree = "<group>"; };
+		D7E9CB032B0B87BB000397F1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		D7E9CB042B0BBD74000397F1 /* Home.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Home.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D76BFA0B2B0A4CF600C5116F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		D76BFA052B0A4CF600C5116F = {
+			isa = PBXGroup;
+			children = (
+				D76BFA102B0A4CF600C5116F /* Urbaton */,
+				D76BFA0F2B0A4CF600C5116F /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		D76BFA0F2B0A4CF600C5116F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D76BFA0E2B0A4CF600C5116F /* Urbaton.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D76BFA102B0A4CF600C5116F /* Urbaton */ = {
+			isa = PBXGroup;
+			children = (
+				D7E9CB032B0B87BB000397F1 /* Info.plist */,
+				D76BFA282B0A52C500C5116F /* Utils */,
+				D76BFA322B0A563D00C5116F /* Networking */,
+				D76BFA1F2B0A4FCC00C5116F /* Model */,
+				D76BFA202B0A4FD600C5116F /* ViewModel */,
+				D76BFA212B0A4FE100C5116F /* View */,
+				D76BFA112B0A4CF600C5116F /* UrbatonApp.swift */,
+				D76BFA152B0A4CF700C5116F /* Assets.xcassets */,
+				D76BFA172B0A4CF700C5116F /* Preview Content */,
+			);
+			path = Urbaton;
+			sourceTree = "<group>";
+		};
+		D76BFA172B0A4CF700C5116F /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				D76BFA182B0A4CF700C5116F /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		D76BFA1F2B0A4FCC00C5116F /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				D76BFA2D2B0A549B00C5116F /* Authorization */,
+				D76BFA2E2B0A54B500C5116F /* Developer.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		D76BFA202B0A4FD600C5116F /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				D76BFA3B2B0A64C100C5116F /* MainViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		D76BFA212B0A4FE100C5116F /* View */ = {
+			isa = PBXGroup;
+			children = (
+				D7E9CB042B0BBD74000397F1 /* Home.swift */,
+				D76BFA442B0A674B00C5116F /* Auth */,
+				D76BFA412B0A662100C5116F /* Components */,
+				D76BFA132B0A4CF600C5116F /* ContentView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		D76BFA282B0A52C500C5116F /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				D76BFA292B0A52D600C5116F /* Errors.swift */,
+				D76BFA302B0A557D00C5116F /* UserDefaultsWorker.swift */,
+				D76BFA3D2B0A64FB00C5116F /* Extensions.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		D76BFA2D2B0A549B00C5116F /* Authorization */ = {
+			isa = PBXGroup;
+			children = (
+				D76BFA222B0A503100C5116F /* User.swift */,
+				D76BFA242B0A511200C5116F /* Token.swift */,
+				D76BFA262B0A51E700C5116F /* ErrorResponse.swift */,
+				D76BFA2B2B0A543700C5116F /* AuthBody.swift */,
+			);
+			path = Authorization;
+			sourceTree = "<group>";
+		};
+		D76BFA322B0A563D00C5116F /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				D76BFA332B0A565300C5116F /* Endpoint.swift */,
+				D76BFA352B0A5C4C00C5116F /* Result.swift */,
+				D76BFA372B0A5D3200C5116F /* AuthorizationService.swift */,
+				D76BFA392B0A5E2900C5116F /* LoadingState.swift */,
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
+		D76BFA412B0A662100C5116F /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				D76BFA422B0A666D00C5116F /* IdentifiableAlert.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		D76BFA442B0A674B00C5116F /* Auth */ = {
+			isa = PBXGroup;
+			children = (
+				D76BFA452B0A675D00C5116F /* LoginScreen.swift */,
+				D76BFA472B0A679300C5116F /* RegisterScreen.swift */,
+			);
+			path = Auth;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		D76BFA0D2B0A4CF600C5116F /* Urbaton */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D76BFA1C2B0A4CF700C5116F /* Build configuration list for PBXNativeTarget "Urbaton" */;
+			buildPhases = (
+				D76BFA0A2B0A4CF600C5116F /* Sources */,
+				D76BFA0B2B0A4CF600C5116F /* Frameworks */,
+				D76BFA0C2B0A4CF600C5116F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Urbaton;
+			productName = Urbaton;
+			productReference = D76BFA0E2B0A4CF600C5116F /* Urbaton.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D76BFA062B0A4CF600C5116F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1500;
+				LastUpgradeCheck = 1500;
+				TargetAttributes = {
+					D76BFA0D2B0A4CF600C5116F = {
+						CreatedOnToolsVersion = 15.0;
+					};
+				};
+			};
+			buildConfigurationList = D76BFA092B0A4CF600C5116F /* Build configuration list for PBXProject "Urbaton" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = D76BFA052B0A4CF600C5116F;
+			productRefGroup = D76BFA0F2B0A4CF600C5116F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D76BFA0D2B0A4CF600C5116F /* Urbaton */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		D76BFA0C2B0A4CF600C5116F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D76BFA192B0A4CF700C5116F /* Preview Assets.xcassets in Resources */,
+				D76BFA162B0A4CF700C5116F /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D76BFA0A2B0A4CF600C5116F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D76BFA2F2B0A54B500C5116F /* Developer.swift in Sources */,
+				D76BFA312B0A557D00C5116F /* UserDefaultsWorker.swift in Sources */,
+				D76BFA142B0A4CF600C5116F /* ContentView.swift in Sources */,
+				D76BFA382B0A5D3200C5116F /* AuthorizationService.swift in Sources */,
+				D76BFA122B0A4CF600C5116F /* UrbatonApp.swift in Sources */,
+				D76BFA3A2B0A5E2900C5116F /* LoadingState.swift in Sources */,
+				D76BFA462B0A675D00C5116F /* LoginScreen.swift in Sources */,
+				D76BFA342B0A565300C5116F /* Endpoint.swift in Sources */,
+				D76BFA3C2B0A64C100C5116F /* MainViewModel.swift in Sources */,
+				D7E9CB052B0BBD74000397F1 /* Home.swift in Sources */,
+				D76BFA232B0A503100C5116F /* User.swift in Sources */,
+				D76BFA2C2B0A543700C5116F /* AuthBody.swift in Sources */,
+				D76BFA432B0A666D00C5116F /* IdentifiableAlert.swift in Sources */,
+				D76BFA482B0A679300C5116F /* RegisterScreen.swift in Sources */,
+				D76BFA3E2B0A64FB00C5116F /* Extensions.swift in Sources */,
+				D76BFA252B0A511200C5116F /* Token.swift in Sources */,
+				D76BFA2A2B0A52D600C5116F /* Errors.swift in Sources */,
+				D76BFA272B0A51E700C5116F /* ErrorResponse.swift in Sources */,
+				D76BFA362B0A5C4C00C5116F /* Result.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		D76BFA1A2B0A4CF700C5116F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				NSApp = "";
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		D76BFA1B2B0A4CF700C5116F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				NSApp = "";
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		D76BFA1D2B0A4CF700C5116F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Urbaton/Preview Content\"";
+				DEVELOPMENT_TEAM = ALLT8W45BY;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Urbaton/Info.plist;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = OKEI.Urbaton;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		D76BFA1E2B0A4CF700C5116F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Urbaton/Preview Content\"";
+				DEVELOPMENT_TEAM = ALLT8W45BY;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Urbaton/Info.plist;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = OKEI.Urbaton;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D76BFA092B0A4CF600C5116F /* Build configuration list for PBXProject "Urbaton" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D76BFA1A2B0A4CF700C5116F /* Debug */,
+				D76BFA1B2B0A4CF700C5116F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D76BFA1C2B0A4CF700C5116F /* Build configuration list for PBXNativeTarget "Urbaton" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D76BFA1D2B0A4CF700C5116F /* Debug */,
+				D76BFA1E2B0A4CF700C5116F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D76BFA062B0A4CF600C5116F /* Project object */;
+}
