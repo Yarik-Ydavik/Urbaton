@@ -6,22 +6,28 @@
 //
 
 import Foundation
+import Combine
+import CoreData
 
 class UserDefaultsWorker {
     
     static let shared = UserDefaultsWorker()
+    static let container = NSPersistentContainer (name: "UserTokens")
+    static var tokensAuthorization: [UserTokens] = []
 
-    private static let KEY_ACCESS_TOKEN = "auth_token"
-    private static let KEY_ACCESS_TOKEN_EXPIRE = "auth_token_expire"
+    private static let KEY_ACCESS_TOKEN = "access_token"
+    private static let KEY_ACCESS_TOKEN_EXPIRE = "date_access"
     private static let KEY_REFRESH_TOKEN = "refresh_token"
-    private static let KEY_REFRESH_TOKEN_EXPIRE = "refresh_token_expire"
+    private static let KEY_REFRESH_TOKEN_EXPIRE = "date_refresh"
     
-    func saveAuthTokens(tokens: TokensInfo) {
+
+    
+    func saveAuthTokens(tokens: TokensInfoData) {
         let defaults = UserDefaults.standard
-        defaults.set(tokens.accessToken, forKey: UserDefaultsWorker.KEY_ACCESS_TOKEN)
-        defaults.set(tokens.accessTokenExpire, forKey: UserDefaultsWorker.KEY_ACCESS_TOKEN_EXPIRE)
-        defaults.set(tokens.refreshToken, forKey: UserDefaultsWorker.KEY_REFRESH_TOKEN)
-        defaults.set(tokens.refreshTokenExpire, forKey: UserDefaultsWorker.KEY_REFRESH_TOKEN_EXPIRE)
+        defaults.set(tokens.access_token, forKey: UserDefaultsWorker.KEY_ACCESS_TOKEN)
+        defaults.set(tokens.date_access, forKey: UserDefaultsWorker.KEY_ACCESS_TOKEN_EXPIRE)
+        defaults.set(tokens.refresh_token, forKey: UserDefaultsWorker.KEY_REFRESH_TOKEN)
+        defaults.set(tokens.date_refresh, forKey: UserDefaultsWorker.KEY_REFRESH_TOKEN_EXPIRE)
     }
     
     func getAccessToken() -> TokenInfo {
@@ -30,6 +36,7 @@ class UserDefaultsWorker {
         let expiresAt = defaults.object(forKey: UserDefaultsWorker.KEY_ACCESS_TOKEN_EXPIRE) as? Int64 ?? 0
         return TokenInfo(token: token, expireEt: expiresAt)
     }
+    
     
     func getRefreshToken() -> TokenInfo {
         let defaults = UserDefaults.standard

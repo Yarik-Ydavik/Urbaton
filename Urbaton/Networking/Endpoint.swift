@@ -10,7 +10,7 @@ import Foundation
 enum Endpoint {
     
     // ссылка
-    static let baseURL: String  = "http://192.168.0.200:5000/"
+    static let baseURL: String  = "http://192.168.0.200:9000/auth/"
 
     case register
     case login
@@ -24,7 +24,7 @@ enum Endpoint {
         case .login:
             return "login"
         case .refreshTokens:
-            return "refresh_tokens"
+            return "refresh"
         case .getDevelopers:
             return "api/users"
         }

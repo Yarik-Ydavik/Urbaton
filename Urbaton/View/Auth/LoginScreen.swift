@@ -20,17 +20,17 @@ struct LoginScreen: View {
         GeometryReader { geometry in
             ScrollView {
                 VStack(spacing: 0) {
-                    Image("logo_customapp_fill")
+                    Image(systemName: "car")
                         .resizable()
                         .scaledToFit()
                         .frame(width: 240, height: 135)
                         .padding(.top, 74)
                     VStack(spacing: 0) {
-                        Text("Sign in")
+                        Text("Войти")
                             .foregroundColor(.black)
                             .fontWeight(.bold)
                         HStack {
-                            Text("Login")
+                            Text("Номер телефона")
                                 .foregroundColor(.black)
                             Spacer()
                         }
@@ -49,7 +49,7 @@ struct LoginScreen: View {
                         
                         
                         HStack {
-                            Text("Password")
+                            Text("Пароль")
                                 .foregroundColor(.black)
                             Spacer()
                         }
@@ -76,19 +76,19 @@ struct LoginScreen: View {
                                 hideKeyboard()
                                 if login.isEmpty {
                                     mainVm.alert = IdentifiableAlert.build(id: "empty_login",
-                                                                           title: "Invalid login",
-                                                                           message: "Login can't be empty")
+                                                                           title: "Недопустимый номер телефона",
+                                                                           message: "Номер телефона не должен быть пустым")
                                     return
                                 }
-                                if password.count < 4 {
+                                if password.count < 2 {
                                     mainVm.alert = IdentifiableAlert.build(id: "empty_login",
-                                                                           title: "Invalid password",
-                                                                           message: "Password lenght must be 4 or more characters")
+                                                                           title: "Недопустимый пароль",
+                                                                           message: "Пароль не должен быть меньше 2 символов")
                                     return
                                 }
                                 mainVm.login(login: login, password: password)
                             } label: {
-                                Text("Authorize")
+                                Text("Авторизоваться")
                                     .foregroundColor(Color.white)
                                     .fontWeight(.bold)
                                     .padding(.vertical, 12)
@@ -97,9 +97,51 @@ struct LoginScreen: View {
                             }
                             .disabled(mainVm.loginPending)
                             .cornerRadius(10)
-                            .padding(.top, 26)
+                            .padding(.vertical, 20)
                             .padding(.horizontal, 24)
                         }
+                                                
+                        HStack {
+                            Button {
+                                hideKeyboard()
+                                // Логика авторизации через Telegram
+    //                            mainVm.loginWithTelegram(login: login, password: password)
+                            } label: {
+                                HStack {
+                                    Image(systemName: "paperplane.fill")
+                                        .tint(Color.white)
+                                    Text("Telegram")
+                                        .foregroundColor(Color.white)
+                                        .fontWeight(.light)
+                                        .frame(maxWidth: .infinity)
+                                }
+                                .padding()
+                                .background(Color.blue)
+
+                                
+                            }
+                            .cornerRadius(10)
+                            
+                            Button {
+                                hideKeyboard()
+                                // Логика авторизации через Google
+    //                            mainVm.loginWithTelegram(login: login, password: password)
+                            } label: {
+                                HStack {
+                                    Image(systemName: "g.circle.fill")
+                                        .tint(Color.white)
+                                    Text("Google")
+                                        .foregroundColor(Color.white)
+                                        .fontWeight(.light)
+                                        .frame(maxWidth: .infinity)
+                                }
+                                .padding()
+                                .background(Color.red)
+                                
+                            }
+                            .cornerRadius(10)
+                        }
+                        
                         
                     }
                     .padding(.horizontal, 20)
@@ -112,7 +154,7 @@ struct LoginScreen: View {
                     .padding(.top, 70)
                     
                     NavigationLink(destination: RegisterScreen()) {
-                        Text("Register")
+                        Text("Регистрация")
                             .fontWeight(.bold)
                     }
                     .padding(.top, 12)
@@ -122,7 +164,6 @@ struct LoginScreen: View {
                 .frame(width: geometry.size.width, height: geometry.size.height)
             }
         }
-        .navigationBarTitle("Authorization", displayMode: .inline)
         .background(Color.white.ignoresSafeArea())
         .alert(item: $mainVm.alert) { alert in
             alert.alert()

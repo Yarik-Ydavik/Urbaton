@@ -7,8 +7,19 @@
 
 import Foundation
 
+// MARK: - Developer
 struct Developer: Codable {
-    let id: UUID
-    let name: String
-    let department: String
+    let data: [Develop]?
+    let error: String?
+}
+
+// MARK: - Develop
+struct Develop: Codable {
+    let id, pass, email: String?
+
+    enum CodingKeys: String, CodingKey {
+        case id = "ID"
+        case pass = "Pass"
+        case email = "Email"
+    }
 }

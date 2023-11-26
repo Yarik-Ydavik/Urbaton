@@ -7,6 +7,21 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D70184812B114B7400F013A2 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D70184802B114B7400F013A2 /* HomeView.swift */; };
+		D70184832B114CE700F013A2 /* LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D70184822B114CE700F013A2 /* LocationManager.swift */; };
+		D70184852B114E2B00F013A2 /* CreateEventResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = D70184842B114E2B00F013A2 /* CreateEventResponse.swift */; };
+		D70184872B114E6600F013A2 /* CreateEventRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = D70184862B114E6600F013A2 /* CreateEventRequest.swift */; };
+		D701848A2B114FD500F013A2 /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D70184892B114FD500F013A2 /* ProfileView.swift */; };
+		D701848C2B11506C00F013A2 /* ListParkView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D701848B2B11506C00F013A2 /* ListParkView.swift */; };
+		D701848F2B11512A00F013A2 /* ParkingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D701848E2B11512A00F013A2 /* ParkingView.swift */; };
+		D70184912B11521800F013A2 /* Marker.swift in Sources */ = {isa = PBXBuildFile; fileRef = D70184902B11521800F013A2 /* Marker.swift */; };
+		D70184932B1152DE00F013A2 /* RowLocationsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D70184922B1152DE00F013A2 /* RowLocationsView.swift */; };
+		D70184952B11535900F013A2 /* LocationPreviewView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D70184942B11535900F013A2 /* LocationPreviewView.swift */; };
+		D70184982B11C30300F013A2 /* UserTokens.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = D70184962B11C30300F013A2 /* UserTokens.xcdatamodeld */; };
+		D701849A2B11D71C00F013A2 /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D70184992B11D71C00F013A2 /* MapView.swift */; };
+		D701849E2B11D84100F013A2 /* RoutePoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = D701849D2B11D84100F013A2 /* RoutePoint.swift */; };
+		D70184A22B120A0200F013A2 /* GetParkingsRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = D70184A12B120A0200F013A2 /* GetParkingsRequest.swift */; };
+		D70184A42B120A3A00F013A2 /* GetParkingsResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = D70184A32B120A3A00F013A2 /* GetParkingsResponse.swift */; };
 		D76BFA122B0A4CF600C5116F /* UrbatonApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D76BFA112B0A4CF600C5116F /* UrbatonApp.swift */; };
 		D76BFA142B0A4CF600C5116F /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D76BFA132B0A4CF600C5116F /* ContentView.swift */; };
 		D76BFA162B0A4CF700C5116F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D76BFA152B0A4CF700C5116F /* Assets.xcassets */; };
@@ -27,10 +42,30 @@
 		D76BFA432B0A666D00C5116F /* IdentifiableAlert.swift in Sources */ = {isa = PBXBuildFile; fileRef = D76BFA422B0A666D00C5116F /* IdentifiableAlert.swift */; };
 		D76BFA462B0A675D00C5116F /* LoginScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = D76BFA452B0A675D00C5116F /* LoginScreen.swift */; };
 		D76BFA482B0A679300C5116F /* RegisterScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = D76BFA472B0A679300C5116F /* RegisterScreen.swift */; };
+		D7AAD2F52B12ABF60062492A /* SearchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7AAD2F42B12ABF60062492A /* SearchView.swift */; };
+		D7AAD2F72B12C82A0062492A /* ElementProfile.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7AAD2F62B12C82A0062492A /* ElementProfile.swift */; };
+		D7AAD2F92B12E6530062492A /* ParkingFiltrView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7AAD2F82B12E6530062492A /* ParkingFiltrView.swift */; };
+		D7AAD2FB2B1303260062492A /* Filtrs.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7AAD2FA2B1303260062492A /* Filtrs.swift */; };
+		D7B098532B10ABBA0095D322 /* FullSDK in Frameworks */ = {isa = PBXBuildFile; productRef = D7B098522B10ABBA0095D322 /* FullSDK */; };
 		D7E9CB052B0BBD74000397F1 /* Home.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7E9CB042B0BBD74000397F1 /* Home.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		D70184802B114B7400F013A2 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		D70184822B114CE700F013A2 /* LocationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationManager.swift; sourceTree = "<group>"; };
+		D70184842B114E2B00F013A2 /* CreateEventResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateEventResponse.swift; sourceTree = "<group>"; };
+		D70184862B114E6600F013A2 /* CreateEventRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateEventRequest.swift; sourceTree = "<group>"; };
+		D70184892B114FD500F013A2 /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
+		D701848B2B11506C00F013A2 /* ListParkView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListParkView.swift; sourceTree = "<group>"; };
+		D701848E2B11512A00F013A2 /* ParkingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParkingView.swift; sourceTree = "<group>"; };
+		D70184902B11521800F013A2 /* Marker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Marker.swift; sourceTree = "<group>"; };
+		D70184922B1152DE00F013A2 /* RowLocationsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RowLocationsView.swift; sourceTree = "<group>"; };
+		D70184942B11535900F013A2 /* LocationPreviewView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationPreviewView.swift; sourceTree = "<group>"; };
+		D70184972B11C30300F013A2 /* UserTokens.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = UserTokens.xcdatamodel; sourceTree = "<group>"; };
+		D70184992B11D71C00F013A2 /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
+		D701849D2B11D84100F013A2 /* RoutePoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoutePoint.swift; sourceTree = "<group>"; };
+		D70184A12B120A0200F013A2 /* GetParkingsRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetParkingsRequest.swift; sourceTree = "<group>"; };
+		D70184A32B120A3A00F013A2 /* GetParkingsResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetParkingsResponse.swift; sourceTree = "<group>"; };
 		D76BFA0E2B0A4CF600C5116F /* Urbaton.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Urbaton.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D76BFA112B0A4CF600C5116F /* UrbatonApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UrbatonApp.swift; sourceTree = "<group>"; };
 		D76BFA132B0A4CF600C5116F /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ContentView.swift; path = ../ContentView.swift; sourceTree = "<group>"; };
@@ -52,6 +87,10 @@
 		D76BFA422B0A666D00C5116F /* IdentifiableAlert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IdentifiableAlert.swift; sourceTree = "<group>"; };
 		D76BFA452B0A675D00C5116F /* LoginScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginScreen.swift; sourceTree = "<group>"; };
 		D76BFA472B0A679300C5116F /* RegisterScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterScreen.swift; sourceTree = "<group>"; };
+		D7AAD2F42B12ABF60062492A /* SearchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchView.swift; sourceTree = "<group>"; };
+		D7AAD2F62B12C82A0062492A /* ElementProfile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ElementProfile.swift; sourceTree = "<group>"; };
+		D7AAD2F82B12E6530062492A /* ParkingFiltrView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParkingFiltrView.swift; sourceTree = "<group>"; };
+		D7AAD2FA2B1303260062492A /* Filtrs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Filtrs.swift; sourceTree = "<group>"; };
 		D7E9CB032B0B87BB000397F1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		D7E9CB042B0BBD74000397F1 /* Home.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Home.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -61,12 +100,53 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D7B098532B10ABBA0095D322 /* FullSDK in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		D70184882B114FB500F013A2 /* user */ = {
+			isa = PBXGroup;
+			children = (
+				D70184802B114B7400F013A2 /* HomeView.swift */,
+				D70184892B114FD500F013A2 /* ProfileView.swift */,
+			);
+			path = user;
+			sourceTree = "<group>";
+		};
+		D701848D2B11510900F013A2 /* Map */ = {
+			isa = PBXGroup;
+			children = (
+				D701848E2B11512A00F013A2 /* ParkingView.swift */,
+				D7AAD2F82B12E6530062492A /* ParkingFiltrView.swift */,
+				D70184902B11521800F013A2 /* Marker.swift */,
+				D70184922B1152DE00F013A2 /* RowLocationsView.swift */,
+				D70184942B11535900F013A2 /* LocationPreviewView.swift */,
+				D70184992B11D71C00F013A2 /* MapView.swift */,
+			);
+			path = Map;
+			sourceTree = "<group>";
+		};
+		D701849F2B12090800F013A2 /* Request */ = {
+			isa = PBXGroup;
+			children = (
+				D70184862B114E6600F013A2 /* CreateEventRequest.swift */,
+				D70184A12B120A0200F013A2 /* GetParkingsRequest.swift */,
+			);
+			path = Request;
+			sourceTree = "<group>";
+		};
+		D70184A02B12091700F013A2 /* Response */ = {
+			isa = PBXGroup;
+			children = (
+				D70184842B114E2B00F013A2 /* CreateEventResponse.swift */,
+				D70184A32B120A3A00F013A2 /* GetParkingsResponse.swift */,
+			);
+			path = Response;
+			sourceTree = "<group>";
+		};
 		D76BFA052B0A4CF600C5116F = {
 			isa = PBXGroup;
 			children = (
@@ -94,6 +174,7 @@
 				D76BFA212B0A4FE100C5116F /* View */,
 				D76BFA112B0A4CF600C5116F /* UrbatonApp.swift */,
 				D76BFA152B0A4CF700C5116F /* Assets.xcassets */,
+				D70184962B11C30300F013A2 /* UserTokens.xcdatamodeld */,
 				D76BFA172B0A4CF700C5116F /* Preview Content */,
 			);
 			path = Urbaton;
@@ -110,8 +191,12 @@
 		D76BFA1F2B0A4FCC00C5116F /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				D70184A02B12091700F013A2 /* Response */,
+				D701849F2B12090800F013A2 /* Request */,
 				D76BFA2D2B0A549B00C5116F /* Authorization */,
 				D76BFA2E2B0A54B500C5116F /* Developer.swift */,
+				D701849D2B11D84100F013A2 /* RoutePoint.swift */,
+				D7AAD2F62B12C82A0062492A /* ElementProfile.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -120,6 +205,7 @@
 			isa = PBXGroup;
 			children = (
 				D76BFA3B2B0A64C100C5116F /* MainViewModel.swift */,
+				D70184822B114CE700F013A2 /* LocationManager.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -127,6 +213,9 @@
 		D76BFA212B0A4FE100C5116F /* View */ = {
 			isa = PBXGroup;
 			children = (
+				D7AAD2FA2B1303260062492A /* Filtrs.swift */,
+				D701848D2B11510900F013A2 /* Map */,
+				D70184882B114FB500F013A2 /* user */,
 				D7E9CB042B0BBD74000397F1 /* Home.swift */,
 				D76BFA442B0A674B00C5116F /* Auth */,
 				D76BFA412B0A662100C5116F /* Components */,
@@ -171,6 +260,8 @@
 			isa = PBXGroup;
 			children = (
 				D76BFA422B0A666D00C5116F /* IdentifiableAlert.swift */,
+				D701848B2B11506C00F013A2 /* ListParkView.swift */,
+				D7AAD2F42B12ABF60062492A /* SearchView.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -200,6 +291,9 @@
 			dependencies = (
 			);
 			name = Urbaton;
+			packageProductDependencies = (
+				D7B098522B10ABBA0095D322 /* FullSDK */,
+			);
 			productName = Urbaton;
 			productReference = D76BFA0E2B0A4CF600C5116F /* Urbaton.app */;
 			productType = "com.apple.product-type.application";
@@ -228,6 +322,9 @@
 				Base,
 			);
 			mainGroup = D76BFA052B0A4CF600C5116F;
+			packageReferences = (
+				D7B098512B10ABBA0095D322 /* XCRemoteSwiftPackageReference "mobile-sdk-full-swift-package" */,
+			);
 			productRefGroup = D76BFA0F2B0A4CF600C5116F /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -258,20 +355,39 @@
 				D76BFA312B0A557D00C5116F /* UserDefaultsWorker.swift in Sources */,
 				D76BFA142B0A4CF600C5116F /* ContentView.swift in Sources */,
 				D76BFA382B0A5D3200C5116F /* AuthorizationService.swift in Sources */,
+				D701849E2B11D84100F013A2 /* RoutePoint.swift in Sources */,
+				D70184952B11535900F013A2 /* LocationPreviewView.swift in Sources */,
 				D76BFA122B0A4CF600C5116F /* UrbatonApp.swift in Sources */,
 				D76BFA3A2B0A5E2900C5116F /* LoadingState.swift in Sources */,
 				D76BFA462B0A675D00C5116F /* LoginScreen.swift in Sources */,
+				D70184852B114E2B00F013A2 /* CreateEventResponse.swift in Sources */,
+				D7AAD2F52B12ABF60062492A /* SearchView.swift in Sources */,
+				D70184932B1152DE00F013A2 /* RowLocationsView.swift in Sources */,
+				D701849A2B11D71C00F013A2 /* MapView.swift in Sources */,
 				D76BFA342B0A565300C5116F /* Endpoint.swift in Sources */,
 				D76BFA3C2B0A64C100C5116F /* MainViewModel.swift in Sources */,
+				D701848C2B11506C00F013A2 /* ListParkView.swift in Sources */,
+				D7AAD2F92B12E6530062492A /* ParkingFiltrView.swift in Sources */,
 				D7E9CB052B0BBD74000397F1 /* Home.swift in Sources */,
 				D76BFA232B0A503100C5116F /* User.swift in Sources */,
+				D7AAD2FB2B1303260062492A /* Filtrs.swift in Sources */,
+				D7AAD2F72B12C82A0062492A /* ElementProfile.swift in Sources */,
+				D701848F2B11512A00F013A2 /* ParkingView.swift in Sources */,
+				D70184872B114E6600F013A2 /* CreateEventRequest.swift in Sources */,
 				D76BFA2C2B0A543700C5116F /* AuthBody.swift in Sources */,
 				D76BFA432B0A666D00C5116F /* IdentifiableAlert.swift in Sources */,
+				D70184912B11521800F013A2 /* Marker.swift in Sources */,
+				D70184812B114B7400F013A2 /* HomeView.swift in Sources */,
+				D701848A2B114FD500F013A2 /* ProfileView.swift in Sources */,
 				D76BFA482B0A679300C5116F /* RegisterScreen.swift in Sources */,
+				D70184A22B120A0200F013A2 /* GetParkingsRequest.swift in Sources */,
+				D70184A42B120A3A00F013A2 /* GetParkingsResponse.swift in Sources */,
 				D76BFA3E2B0A64FB00C5116F /* Extensions.swift in Sources */,
 				D76BFA252B0A511200C5116F /* Token.swift in Sources */,
+				D70184832B114CE700F013A2 /* LocationManager.swift in Sources */,
 				D76BFA2A2B0A52D600C5116F /* Errors.swift in Sources */,
 				D76BFA272B0A51E700C5116F /* ErrorResponse.swift in Sources */,
+				D70184982B11C30300F013A2 /* UserTokens.xcdatamodeld in Sources */,
 				D76BFA362B0A5C4C00C5116F /* Result.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -412,6 +528,7 @@
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Urbaton/Info.plist;
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -442,6 +559,7 @@
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Urbaton/Info.plist;
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -482,6 +600,38 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		D7B098512B10ABBA0095D322 /* XCRemoteSwiftPackageReference "mobile-sdk-full-swift-package" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/2gis/mobile-sdk-full-swift-package";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 7.4.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		D7B098522B10ABBA0095D322 /* FullSDK */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = D7B098512B10ABBA0095D322 /* XCRemoteSwiftPackageReference "mobile-sdk-full-swift-package" */;
+			productName = FullSDK;
+		};
+/* End XCSwiftPackageProductDependency section */
+
+/* Begin XCVersionGroup section */
+		D70184962B11C30300F013A2 /* UserTokens.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				D70184972B11C30300F013A2 /* UserTokens.xcdatamodel */,
+			);
+			currentVersion = D70184972B11C30300F013A2 /* UserTokens.xcdatamodel */;
+			path = UserTokens.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = D76BFA062B0A4CF600C5116F /* Project object */;
 }

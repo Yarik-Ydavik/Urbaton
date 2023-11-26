@@ -25,6 +25,8 @@ class Errors {
     static let ERR_ACCESS_TOKEN_EXPIRED = "срок действия токена доступа истек"
     static let ERR_INVALID_REFRESH_TOKEN = "недопустимый токен обновления"
     static let ERR_REFRESH_TOKEN_EXPIRED = "срок действия токена обновления истек"
+    static let ERR_REQUEST_TIMED_OUT = "The request timed out."
+    static let ERR_CONNECT_TO_SERVER = "Could not connect to the server."
     
     static func messageFor(err: String) -> String {
         switch err {
@@ -34,6 +36,10 @@ class Errors {
             return "Пользователь с указанным логином не существует"
         case ERR_WRONG_CREDENTIALS:
             return "Введен неправильный логин или пароль"
+        case ERR_REQUEST_TIMED_OUT:
+            return "Время ожидания ответа от сервера истекло"
+        case ERR_CONNECT_TO_SERVER:
+            return "Нет соединения с сервером"
         
         default:
             return "Произошла ошибка. Пожалуйста, проверьте ваше интернет-соединение и повторите попытку"

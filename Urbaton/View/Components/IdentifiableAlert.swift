@@ -31,8 +31,8 @@ struct IdentifiableAlert: Identifiable {
         })
     }
     
-    static func networkError() -> IdentifiableAlert {
-        return buildForError(id: "network_err", message: "Пожалуйста проверьте ваше интернет соединение и попробуйте снова")
+    static func networkError(err: String?) -> IdentifiableAlert {
+        return buildForError(id: "network_err", message: Errors.messageFor(err: err ?? "Пожалуйста проверьте ваше интернет соединение и попробуйте снова") )
     }
     
 }

@@ -8,6 +8,7 @@
 import Foundation
 
 struct AuthBody: Codable {
-    let email: String
-    let password: String
+    let number: String
+    let pass: String
+    let role: String
 }

@@ -15,9 +15,16 @@ struct ContentView: View {
         NavigationView {
             if mainVm.showAuthContainer {
                 LoginScreen()
+                    .environmentObject(mainVm)
             } else {
-                Home()
+                HomeView()
+                    .environmentObject(mainVm)
             }
+            
+
+//            HomeView()
+//                .environmentObject(mainVm)
+            
         }
         .background(Color.white.ignoresSafeArea())
         .navigationViewStyle(StackNavigationViewStyle())
@@ -30,3 +37,4 @@ struct ContentView: View {
 #Preview {
     ContentView()
 }
+

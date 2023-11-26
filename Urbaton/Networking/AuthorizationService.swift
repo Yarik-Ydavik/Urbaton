@@ -18,9 +18,9 @@ class Requester {
     private init() {}
     
     private func onTokensRefreshed(tokens: TokensInfo) {
-        UserDefaultsWorker.shared.saveAuthTokens(tokens: tokens)
-        accessToken = TokenInfo(token: tokens.accessToken, expireEt: tokens.accessTokenExpire)
-        refreshToken = TokenInfo(token: tokens.refreshToken, expireEt: tokens.refreshTokenExpire)
+        UserDefaultsWorker.shared.saveAuthTokens(tokens: tokens.data!)
+        accessToken = TokenInfo(token: tokens.data!.access_token!, expireEt: tokens.data!.date_access!)
+        refreshToken = TokenInfo(token: tokens.data!.refresh_token!, expireEt: tokens.data!.date_refresh!)
     }
     
     func dropTokens() {
@@ -85,7 +85,9 @@ class Requester {
         }
     }
     
-//    func getDevelopers(onResult: @escaping (Result<[Developer]>) -> Void) {
+//    /// Функция получения пользователей вызываемая из класса
+//    /// - Parameter onResult: массив пользователей или null
+//    func getDevelopers(onResult: @escaping (Result<Developer>) -> Void) {
 //        let url = Endpoint.getDevelopers.absoluteURL
 //        let request = formRequest(url: url, data: Data(), method: "GET")
 //        self.request(request: request, onResult: onResult)
@@ -94,6 +96,15 @@ class Requester {
     private var needReAuth: Bool {
         let current = Date().timestampMillis()
         let expires = accessToken.expireEt
+        
+        print("-----")
+        print(current)
+        print(expires)
+        print(current + Requester.ACCESS_TOKEN_LIFE_THRESHOLD_SECONDS)
+        
+        print(refreshToken.token.isEmpty)
+        print("-----")
+
         return current + Requester.ACCESS_TOKEN_LIFE_THRESHOLD_SECONDS > expires
     }
     
@@ -143,6 +154,10 @@ class Requester {
                 } catch {
                     DispatchQueue.main.async {
                         //should never happen
+                        let response = try! JSONDecoder().decode(Develop.self, from: data)
+                        print("--")
+                        print(response)
+                        print("---------")
                         onResult(.authError(ErrorResponse(code: 0, message: Errors.ERR_PARSE_RESPONSE)))
                     }
                     return

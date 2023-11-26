@@ -15,16 +15,22 @@ struct User: Codable {
 
 // MARK: - DataClass
 struct DataClass: Codable {
-    let refreshToken: String?
-    let refreshTokenExpire: Int?
-    let accessToken: String?
-    let accessTokenExpire: Int?
+    let access_token: String?
+    let refresh_token: String?
+    let date_access: Int?
+    let date_refresh: Int?
     
     func getTokensInfo() -> TokensInfo {
-        return TokensInfo(refreshToken: refreshToken!,
-                          refreshTokenExpire: Int64(refreshTokenExpire!),
-                          accessToken: accessToken!,
-                          accessTokenExpire: Int64(accessTokenExpire!))
+        return TokensInfo(
+            data: TokensInfoData(
+                access_token: access_token!,
+                refresh_token: refresh_token!,
+                date_access: Int64(date_access!),
+                date_refresh: Int64(date_refresh!)
+                ),
+            error: ""
+        )
+        
     }
 }
 
